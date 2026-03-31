@@ -1,0 +1,42 @@
+{
+  "name": "@hyperpipe/core-host",
+  "version": "0.1.0",
+  "description": "Shared process launcher and IPC host utilities for Hyperpipe Core",
+  "type": "module",
+  "main": "./index.cjs",
+  "license": "Apache-2.0",
+  "homepage": "https://hyperpipe.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/squip/hyperpipe.git",
+    "directory": "hyperpipe-core-host"
+  },
+  "bugs": {
+    "url": "https://github.com/squip/hyperpipe/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.cjs",
+    "index.d.ts",
+    "index.mjs",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "scripts": {
+    "pack:check": "npm pack --dry-run"
+  }
+}
