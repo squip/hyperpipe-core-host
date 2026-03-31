@@ -47,7 +47,7 @@ function resolveCorePackageRoot(options = {}) {
 
   for (const base of searchPaths) {
     try {
-      const packagePath = require.resolve('@hyperpipe/core/package.json', { paths: [base] })
+      const packagePath = require.resolve('@squip/hyperpipe-core/package.json', { paths: [base] })
       return path.dirname(packagePath)
     } catch (_) {
       // continue

@@ -1,5 +1,5 @@
 {
-  "name": "@hyperpipe/core-host",
+  "name": "@squip/hyperpipe-core-host",
   "version": "0.1.0",
   "description": "Shared process launcher and IPC host utilities for Hyperpipe Core",
   "type": "module",
